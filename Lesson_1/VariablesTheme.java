@@ -44,10 +44,10 @@ public class VariablesTheme {
 
     System.out.printf("\n4. Отображение min и max значений числовых типов данных\n");
 
-    byte myByte = 127;
-    short myShort = 32_767;
-    int myInt = 2_147_483_647;
-    long myLong = 9_223_372_036_854_775_807L;
+    byte myByte = Byte.MAX_VALUE;
+    short myShort = Short.MAX_VALUE;
+    int myInt = Integer.MAX_VALUE;
+    long myLong = Long.MAX_VALUE;
 
     System.out.println("Original value: " + myByte + "; incremented value: " + ++myByte + "; decremented value: " + --myByte);
     System.out.println("Original value: " + myShort + "; incremented value: " + ++myShort + "; decremented value: " + --myShort);
