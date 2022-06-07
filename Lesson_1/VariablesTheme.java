@@ -60,14 +60,48 @@ public class VariablesTheme {
     // Task 5
     System.out.printf("\n5. Перестановка значений переменных\n");
 
-    double doubleVar1 = 1.1;
-    double doubleVar2 = 2.2;
-    double doubleVar3;
+    double defaultA = 1.1;
+    double defaultB = 2.2;
 
-    doubleVar3 = doubleVar1;
-    doubleVar1 = doubleVar2;
-    doubleVar2 = doubleVar3;
-    System.out.println("var1 = " + doubleVar1 + " var2 = " + doubleVar2);
+    // Temp variable approche
+    double a = defaultA;
+    double b = defaultB;
+    double c;
+    System.out.println("Перестановка при помощи третьей переменной:");
+    System.out.println("\tОригинальные значения: var1 = " + a + " var2 = " + b);
+
+    c = a;
+    a = b;
+    b = c ;
+    System.out.println("\tОбноыленные значения: var1 = " + a + " var2 = " + b);
+
+    // Math approche
+    System.out.println("Математическая перестановка:");
+    System.out.println("\tОригинальные значения: var1 = " + a + " var2 = " + b);
+
+    a = defaultA;
+    b = defaultB;
+
+    a = a + b;
+    b = a - b;
+    a = a - b;
+    System.out.println("\tОбноыленные значения: var1 = " + a + " var2 = " + b);
+
+    // Bit shift approche
+
+    /*
+     * Побитовые операции в Java применимы только к целочисленным типам данных.
+     * Сам алгоритм схож с арифметической перестановкой:
+     *
+     * int a = 1;
+     * int b = 2;
+     *
+     * a = a ^ b;  // a == 3
+     * b = b ^ a;  // b == 1 
+     * a = a ^ b;  // a == 2
+     *
+     */
+   
 
     // Task 6
     System.out.printf("\n6. Вывод символов и их кодов\n");
