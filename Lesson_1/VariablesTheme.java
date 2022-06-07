@@ -58,6 +58,18 @@ public class VariablesTheme {
 
     System.out.printf("\n6. Вывод символов и их кодов\n");
 
+    byte var1 = 35;
+    byte var2 = 38;
+    byte var3 = 64;
+    byte var4 = 94;
+    byte var5 = 95;
+
+    System.out.println(var1 + " = " + (char) var1);
+    System.out.println(var2 + " = " + (char) var2);
+    System.out.println(var3 + " = " + (char) var3);
+    System.out.println(var4 + " = " + (char) var4);
+    System.out.println(var5 + " = " + (char) var5);
+
     System.out.printf("\n7. Произведение и сумма цифр числа\n");
 
     short myNumber = 345;
