@@ -34,14 +34,14 @@ public class VariablesTheme {
         // Task 3
         System.out.println("\n3. Вывод на консоль слова JAVA");
   
-        String banner = """
-             J    a  v     v  a
-             J   a a  v   v  a a
-          J  J  aaaaa  V V  aaaaa
-           JJ  a     a  V  a     a
-          """;
+        String javaMsg = """
+                   J    a  v     v  a
+                   J   a a  v   v  a a
+                J  J  aaaaa  V V  aaaaa
+                 JJ  a     a  V  a     a
+                """;
   
-        System.out.println(banner);
+        System.out.println(javaMsg);
   
         // Task 4
         System.out.println("4. Отображение min и max значений числовых типов данных");
