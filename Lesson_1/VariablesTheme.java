@@ -59,47 +59,37 @@ public class VariablesTheme {
         // Task 5
         System.out.println("\n5. Перестановка значений переменных");
   
-        double defaultA = 1.1;
-        double defaultB = 2.2;
+        double num1 = 1.1;
+        double num2 = 2.2;
+        double tmp;
   
         // Temp variable approche
-        double a = defaultA;
-        double b = defaultB;
-        double c;
         System.out.println("Перестановка при помощи третьей переменной:");
-        System.out.println("\tОригинальные значения: var1 = " + a + " var2 = " + b);
+        System.out.println("\tОригинальные значения: var1 = " + num1 + " var2 = " + num2);
   
-        c = a;
-        a = b;
-        b = c;
-        System.out.println("\tОбноыленные значения: var1 = " + a + " var2 = " + b);
+        tmp = num1;
+        num1 = num2;
+        num2 = tmp;
+        System.out.println("\tОбноыленные значения: var1 = " + num1 + " var2 = " + num2);
   
         // Math approche
         System.out.println("Математическая перестановка:");
-        System.out.println("\tОригинальные значения: var1 = " + a + " var2 = " + b);
+        System.out.println("\tОригинальные значения: var1 = " + num1 + " var2 = " + num2);
   
-        a = defaultA;
-        b = defaultB;
+	num1 = num1 + num2;
+	num2 = num1 - num2;
+	num1 = num1 - num2;
+        System.out.println("\tОбноыленные значения: var1 = " + num1 + " var2 = " + num2);
   
-        a = a + b;
-        b = a - b;
-        a = a - b;
-        System.out.println("\tОбноыленные значения: var1 = " + a + " var2 = " + b);
-  
-        // Bit shift approche
-  
-        /*
-         * Побитовые операции в Java применимы только к целочисленным типам данных.
-         * Сам алгоритм схож с арифметической перестановкой:
-         *
-         * int a = 1;
-         * int b = 2;
-         *
-         * a = a ^ b;  // a == 3
-         * b = b ^ a;  // b == 1 
-         * a = a ^ b;  // a == 2
-         *
-         */
+        // XOR approche
+        System.out.println("Перестановка XOR`ом");
+        System.out.println("\tОригинальные значения: var1 = " + num1 + " var2 = " + num2);
+
+        num1 = (double) (((int) (num1 * 10)) ^ ((int) (num2 * 10))) / 10; 
+        num2 = (double) (((int) (num2 * 10)) ^ ((int) (num1 * 10))) / 10; 
+        num1 = (double) (((int) (num1 * 10)) ^ ((int) (num2 * 10))) / 10; 
+
+        System.out.println("\tОбноыленные значения: var1 = " + num1 + " var2 = " + num2);
   
         // Task 6
         System.out.println("\n6. Вывод символов и их кодов");
