@@ -94,17 +94,17 @@ public class VariablesTheme {
         // Task 6
         System.out.println("\n6. Вывод символов и их кодов");
   
-        byte var1 = 35;
-        byte var2 = 38;
-        byte var3 = 64;
-        byte var4 = 94;
-        byte var5 = 95;
+        byte code35 = 35;
+        byte code38 = 38;
+        byte code64 = 64;
+        byte code94 = 94;
+        byte code95 = 95;
   
-        System.out.println(var1 + " = " + (char) var1);
-        System.out.println(var2 + " = " + (char) var2);
-        System.out.println(var3 + " = " + (char) var3);
-        System.out.println(var4 + " = " + (char) var4);
-        System.out.println(var5 + " = " + (char) var5);
+        System.out.println(code35 + " = " + (char) code35);
+        System.out.println(code38 + " = " + (char) code38);
+        System.out.println(code64 + " = " + (char) code64);
+        System.out.println(code94 + " = " + (char) code94);
+        System.out.println(code95 + " = " + (char) code95);
   
         // Task 7
         System.out.println("\n7. Произведение и сумма цифр числа");
