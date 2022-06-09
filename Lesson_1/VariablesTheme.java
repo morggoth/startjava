@@ -156,7 +156,7 @@ public class VariablesTheme {
         // Task 10
         System.out.println("\n10. Преобразование секунд");
   
-        int seconds = 86399;
-        System.out.println(seconds / (60 * 60) + ":" + (seconds / 60) % 60 + ":" + seconds % 60 );
+        int srcSec = 86399;
+        System.out.println(srcSec / (60 * 60) + ":" + (srcSec / 60) % 60 + ":" + srcSec % 60 );
     }
 }
