@@ -24,12 +24,12 @@ public class VariablesTheme {
         // Task 2
         System.out.println("\n2. Расчет стоимости товара со скидкой");
   
-        int goodX = 100;
-        int goodY = 200;
-        float totalDiscount = 0.11f;
+        int priceGoodX = 100;
+        int priceGoodY = 200;
+        float discount = 0.11f;
   
-        System.out.println((goodX + goodY) * totalDiscount);
-        System.out.println((goodX + goodY) * (1 - totalDiscount));
+        System.out.println((priceGoodX + priceGoodY) * discount);
+        System.out.println((priceGoodX + priceGoodY) * (1 - discount));
   
         // Task 3
         System.out.println("\n3. Вывод на консоль слова JAVA");
