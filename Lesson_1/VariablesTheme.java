@@ -46,15 +46,15 @@ public class VariablesTheme {
         // Task 4
         System.out.println("4. Отображение min и max значений числовых типов данных");
   
-        byte myByte = Byte.MAX_VALUE;
-        short myShort = Short.MAX_VALUE;
-        int myInt = Integer.MAX_VALUE;
-        long myLong = Long.MAX_VALUE;
+        byte maxByte = Byte.MAX_VALUE;
+        short maxShort = Short.MAX_VALUE;
+        int maxInt = Integer.MAX_VALUE;
+        long maxLong = Long.MAX_VALUE;
   
-        System.out.println("Original value: " + myByte + "; incremented value: " + ++myByte + "; decremented value: " + --myByte);
-        System.out.println("Original value: " + myShort + "; incremented value: " + ++myShort + "; decremented value: " + --myShort);
-        System.out.println("Original value: " + myInt + "; incremented value: " + ++myInt + "; decremented value: " + --myInt);
-        System.out.println("Original value: " + myLong + "; incremented value: " + ++myLong + "; decremented value: " + --myLong);
+        System.out.println("Original value: " + maxByte + "; incremented value: " + ++maxByte + "; decremented value: " + --maxByte);
+        System.out.println("Original value: " + maxShort + "; incremented value: " + ++maxShort + "; decremented value: " + --maxShort);
+        System.out.println("Original value: " + maxInt + "; incremented value: " + ++maxInt + "; decremented value: " + --maxInt);
+        System.out.println("Original value: " + maxLong + "; incremented value: " + ++maxLong + "; decremented value: " + --maxLong);
   
         // Task 5
         System.out.println("\n5. Перестановка значений переменных");
