@@ -109,13 +109,13 @@ public class VariablesTheme {
         // Task 7
         System.out.println("\n7. Произведение и сумма цифр числа");
   
-        short myNumber = 345;
-        short firstDigit = (short) (myNumber / 100);
-        short secondDigit = (short) (myNumber / 10 % 10);
-        short thirdNumber = (short) (myNumber % 10);
+        short srcNumber = 345;
+        short hundreds = (short) (srcNumber/ 100);
+        short tens = (short) (srcNumber / 10 % 10);
+        short ones = (short) (srcNumber % 10);
         
-        System.out.println("сумма цифр числа N = " + (firstDigit + secondDigit + thirdNumber));
-        System.out.println("произведение цифр числа N =  " + (firstDigit * secondDigit * thirdNumber));
+        System.out.println("сумма цифр числа N = " + (hundreds + tens + ones));
+        System.out.println("произведение цифр числа N =  " + (hundreds * tens * ones));
   
         // Task 8
         System.out.println("\n8. Вывод на консоль ASCII-арт Дюка");
@@ -143,15 +143,15 @@ public class VariablesTheme {
         // Task 9
         System.out.println("\n9. Отображение количества сотен, десятков и единиц числа");
   
-        myNumber = 123;
-        firstDigit = (short) (myNumber / 100);
-        secondDigit = (short) (myNumber / 10 % 10);
-        thirdNumber = (short) (myNumber % 10);
+        srcNumber = 123;
+        hundreds = (short) (srcNumber / 100);
+        tens = (short) (srcNumber / 10 % 10);
+        ones = (short) (srcNumber % 10);
   
         System.out.println("Число N содержит:" +
-          "\n  " + firstDigit + " сотню" +
-          "\n  " + secondDigit + " десятка" +
-          "\n  " + thirdNumber + " единицы");
+                "\n  " + hundreds + " сотню" +
+                "\n  " + tens + " десятка" +
+                "\n  " + ones + " единицы");
   
         // Task 10
         System.out.println("\n10. Преобразование секунд");
